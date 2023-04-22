@@ -10,7 +10,7 @@ The logic is as follow :
 - stores the valuable information **(3)**, then cleans up the room by removing the AAreaCubeFiller **(4)**
 - spawns the desired blueprint actor **(5)** appropriately in the room **(6)**
 
-For more information, seek for the Viltek project README. 
+*For more information, seek for the Viltek project README.*
 
 
 ---
@@ -44,10 +44,10 @@ Go to RoomBuilder.cpp and modify the last integer on the line 32, after *this->B
 Go to Content/Blueprints/GameAssets/Boxes, open BP_Box_m01, then on the *Details* panel, look for the *Obstacle Management* within the *Child Actor Template*, in the *Child Actor Component* section. There, you can tick the any of the six faces of the cube. 
 Reminder : blue = facing / in contact with an obstacle, green = not facing / not in contact with any obstacle directly.
 
-### Examples : 
+### Examples: 
 *(a)* If you only tick Face 05 as true (meaning the face appears blue) and left the other faces unticked (green), the actors will only be spawned "sticked" to the ceiling and never in contact with a wall.
 *(b)* If you tick both Face 03 and Face 06 and left all the other faces unticked, the actors will only be spawned "sticked" on a wall and to the floor (or to any horizontal surface facing upward).
 
 ### ***NOTHING*** else is meant to be modified. Doing so is highly susceptible to end up with the project crashing. 
 
-*Note : this project should be able to be converted to a UE5 without any modification required.*
+*Note: this project should be able to be converted to a UE5 without any modification required.*
