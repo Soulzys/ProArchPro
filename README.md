@@ -36,12 +36,12 @@ When you run the project, you only need to then click on the ***Testing*** butto
 
 ## 1/ The number of Blueprint actors to spawn.
 
--> Go to RoomBuilder.cpp and modify the last integer on the line 32, after *this->BuilderController*. During the demo, the original value should be 5. 
+Go to RoomBuilder.cpp and modify the last integer on the line 32, after *this->BuilderController*. During the demo, the original value should be 5. 
 
 
 ## 2/ The way the actors are spawned.
 
--> Go to Content/Blueprints/GameAssets/Boxes, open BP_Box_m01, then on the *Details* panel, look for the *Obstacle Management* within the *Child Actor Template*, in the *Child Actor Component* section. There, you can tick the any of the six faces of the cube. 
+Go to Content/Blueprints/GameAssets/Boxes, open BP_Box_m01, then on the *Details* panel, look for the *Obstacle Management* within the *Child Actor Template*, in the *Child Actor Component* section. There, you can tick the any of the six faces of the cube. 
 Reminder : blue = facing / in contact with an obstacle, green = not facing / not in contact with any obstacle directly.
 
 ### Examples : 
