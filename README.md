@@ -29,7 +29,10 @@ For more information, seek for the Viltek project README.
 
 
 # Project manipulation
-At this stage, only two things can be easily modified within the project.
+At this stage, only two things can be easily modified within the project.  
+When you run the project, you only need to then click on the ***Testing*** button. 
+
+*Note : as the player, you are spawned outside of the room as it was thought to be a better spot to observe the room. However, you can change that by going to the Unreal Editor and moving the PlayerStart downwards so that the next time you run the game, you will be spawned within the room.*
 
 ## 1/ The number of Blueprint actors to spawn.
 
@@ -42,7 +45,7 @@ At this stage, only two things can be easily modified within the project.
 Reminder : blue = facing / in contact with an obstacle, green = not facing / not in contact with any obstacle directly.
 
 ### Examples : 
-*(a)* If you tick Face 05 as true (meaning the face appears blue), the actors will only be spawned "sticked" to the ceiling and never in contact with a wall.  
-*(b)* If you tick both Face 03 and Face 06, the actors will only be spawned "sticked" on a wall and to the floor (or to any horizontal surface facing upward).
+*(a)* If you only tick Face 05 as true (meaning the face appears blue) and left the other faces unticked (green), the actors will only be spawned "sticked" to the ceiling and never in contact with a wall.
+*(b)* If you tick both Face 03 and Face 06 and left all the other faces unticked, the actors will only be spawned "sticked" on a wall and to the floor (or to any horizontal surface facing upward).
 
 ### ***NOTHING*** else is meant to be modified. Doing so is highly susceptible to end up with the project crashing. 
