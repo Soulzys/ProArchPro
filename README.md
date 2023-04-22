@@ -12,8 +12,7 @@ The logic is as follow :
 For more information, seek for the Viltek project README. 
 
 
-*
-*
+---
 
 
 **(1)** *Content/Data/DataTables/DT_RoomCatalog*
