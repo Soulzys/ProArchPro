@@ -1,4 +1,5 @@
 # Project description
+
 This project is part of a larger procedural generation project. It shall eventually be combined with the Viltek project, as the two are complementary. 
 
 ProArchPro focuses on filling a closed space (such as a room) with static meshes in a procedural and meaningful way. 
@@ -29,18 +30,17 @@ For more information, seek for the Viltek project README.
 
 
 # Project manipulation
+
 At this stage, only two things can be easily modified within the project.  
 When you run the project, you only need to then click on the ***Testing*** button. 
 
 *Note : as the player, you are spawned outside of the room as it was thought to be a better spot to observe the room. However, you can change that by going to the Unreal Editor and moving the PlayerStart downwards so that the next time you run the game, you will be spawned within the room.*
 
 ## 1/ The number of Blueprint actors to spawn.
-
 Go to RoomBuilder.cpp and modify the last integer on the line 32, after *this->BuilderController*. During the demo, the original value should be 5. 
 
 
 ## 2/ The way the actors are spawned.
-
 Go to Content/Blueprints/GameAssets/Boxes, open BP_Box_m01, then on the *Details* panel, look for the *Obstacle Management* within the *Child Actor Template*, in the *Child Actor Component* section. There, you can tick the any of the six faces of the cube. 
 Reminder : blue = facing / in contact with an obstacle, green = not facing / not in contact with any obstacle directly.
 
@@ -49,3 +49,5 @@ Reminder : blue = facing / in contact with an obstacle, green = not facing / not
 *(b)* If you tick both Face 03 and Face 06 and left all the other faces unticked, the actors will only be spawned "sticked" on a wall and to the floor (or to any horizontal surface facing upward).
 
 ### ***NOTHING*** else is meant to be modified. Doing so is highly susceptible to end up with the project crashing. 
+
+*Note : this project should be able to be converted to a UE5 without any modification required.*
