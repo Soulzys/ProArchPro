@@ -35,7 +35,6 @@ At this stage, only two things can be easily modified within the project.
 
 -> Go to RoomBuilder.cpp and modify the last integer on the line 32, after *this->BuilderController*. During the demo, the original value should be 5. 
 
-*****
 
 ## 2/ The way the actors are spawned.
 
@@ -43,7 +42,7 @@ At this stage, only two things can be easily modified within the project.
 Reminder : blue = facing / in contact with an obstacle, green = not facing / not in contact with any obstacle directly.
 
 ### Examples : 
-*(a)* If you tick Face 05 as true (meaning the face appears blue), the actors will only be spawned "sticked" to the ceiling and never in contact with a wall.
+*(a)* If you tick Face 05 as true (meaning the face appears blue), the actors will only be spawned "sticked" to the ceiling and never in contact with a wall.  
 *(b)* If you tick both Face 03 and Face 06, the actors will only be spawned "sticked" on a wall and to the floor (or to any horizontal surface facing upward).
 
 ### ***NOTHING*** else is meant to be modified. Doing so is highly susceptible to end up with the project crashing. 
